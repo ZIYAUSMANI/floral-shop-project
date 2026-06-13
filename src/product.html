@@ -1,0 +1,1440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cafe Street - Enjoy your coffee before your activity</title>
+
+    <meta name="description" content="Cafe Street where you enjoy your coffee before your activity">
+    <meta name="keywords"
+        content="Cafe Street, coffee, Cappuccino, Order, Vanilla Latte, Espresso, Hazelnut Latte, delivery service, Special menu, discount">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Cafe Street - Enjoy your coffee before your activity">
+    <meta property="og:description" content="Cafe Street where you enjoy your coffee before your activity">
+    <meta property="og:image" content=" ">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cafe Street - Enjoy your coffee before your activity">
+    <meta name="twitter:description" content="Cafe Street where you enjoy your coffee before your activity">
+    <meta name="twitter:image" content=" ">
+
+    <!-- javascript file-->
+    <script type="module" src="./js/main.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+    <header id="topHeader" class="p-3 p-lg-5 border-bottom">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-auto">
+                    <a href="#">
+                        <img src="assest/image/logo.webp" alt="logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="col-md-2 d-flex gap-3 align-items-center px-3 d-none d-md-flex  phone-section">
+                    <span class="ms-auto">
+                        <i class="icon-phone"></i>
+                    </span>
+                    <div>
+                        <span class="text-color d-block mb-0 phone fw-500">PHONE</span>
+                        <a href="#" class=" text-decoration-none d-block mt-0 phone hover">
+                            +0123-456-789
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-none d-md-block  search-section">
+                    <div class="d-flex align-items-center rounded-pill border px-3 text-scondary">
+                        <input type="text" class="form-control border-0 shadow-none" placeholder="Search here...">
+                        <a href="#">
+                            <img src="assest/icon/search.svg" class="opacity-50">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-end gap-3 flex-nowrap">
+                    <div class="d-flex position-relative">
+                        <div id="wishlistCount"
+                            class="count align-items-center d-flex justify-content-center ms-2 badge position-absolute bg-primary">
+                            2
+                        </div>
+
+                        <a href="wishlist.html" class="text-decoration-none text-dark fs-5">
+                            <i class="icon-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex position-relative">
+                        <div
+                            class="count align-items-center d-flex justify-content-center ms-2 badge position-absolute  bg-primary">
+                            2
+                        </div>
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas"
+                            class="text-decoration-none text-dark fs-5">
+                            <i class="icon-handbag"></i>
+                        </a>
+                    </div>
+
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" class="text-decoration-none">
+                        <span class="text-muted d-block your-cart mb-0">YOUR CART</span>
+                        <span class="text-danger d-block your-cart mt-0 ms-1">$89.25</span>
+                    </a>
+                    <button class="btn d-lg-none ms-2 toggle-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <!-- cart sidebar -->
+                    <div class="offcanvas offcanvas-end cart-sidebar container" tabindex="-1" id="cartCanvas">
+
+
+                        <div class="offcanvas-header border-bottom">
+                            <h6 class="offcanvas-title">CART</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+
+
+                        <div class="offcanvas-body p-0 d-flex flex-column">
+
+
+                            <div class="cart-items custom-scrollbar flex-grow-1 p-3">
+
+
+                                <div class="cart-item d-flex position-relative mb-4 mt-3">
+
+
+                                    <button class="remove-btn">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+
+                                    <img src="assest/image/1.webp" class="cart-img">
+
+                                    <div class="cart-content">
+                                        <div class="fw-semibold small-size mb-0">Premium Joyful</div>
+                                        <span class="text-muted small-size d-block ">1 x $65.00</span>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+
+                                <div class="cart-item d-flex position-relative mb-4">
+                                    <button class="remove-btn">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+
+                                    <img src="assest/image/2.webp" class="cart-img">
+
+                                    <div class="cart-content">
+                                        <div class="fw-semibold small-size mb-0">The White Rose</div>
+                                        <small class="text-muted small-size d-block">1 x $85.00</small>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="cart-item d-flex position-relative mb-4">
+                                    <button class="remove-btn">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+
+                                    <img src="assest/image/3.webp" class="cart-img">
+
+                                    <div class="cart-content">
+                                        <div class="fw-semibold small-size mb-0">Red Rose Bouquet</div>
+                                        <span class="text-muted small-size d-block">1 x $92.00</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="cart-item d-flex position-relative mb-4">
+                                    <button class="remove-btn">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+
+                                    <img src="assest/image/4.webp" class="cart-img">
+
+                                    <div class="cart-content">
+                                        <div class="fw-semibold small-size mb-0">Pink Flower Tree</div>
+                                        <span class="text-muted small-size d-block">1 x $68.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-footer p-3 border-top">
+                                <hr>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span class="text-secondary ">Subtotal:</span>
+                                    <span class="text-danger ">$310.00</span>
+                                </div>
+                                <hr>
+
+                                <div class="d-flex mb-3  justify-content-between">
+                                    <button class="btn btn-danger rounded-0 small-size py-2 px-3"
+                                        onclick="window.location.href='cart.html'">
+                                        VIEW CART
+                                    </button>
+                                    <button class="btn btn-dark rounded-0 small-size py-2 px-3 ">CHECKOUT</button>
+                                </div>
+
+                                <p class="text-center small text-muted mb-0">
+                                    Free Shipping on All Orders Over $100!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--   menu sidebar  -->
+                    <div class="offcanvas offcanvas-start fiama-sidebar p-3" tabindex="-1" id="mobileMenu">
+                        <div class="fiama-sidebar-content custom-scrollbar ">
+
+                            <div class="offcanvas-header border-bottom">
+                                <a href="index.html">
+                                    <img src="assest/image/logo.webp" alt="logo" class="logo">
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+
+                            <div class="p-3 border-bottom">
+                                <div class="input-group ">
+                                    <input type="text" class="form-control border-0 rounded-0 bg-color-light"
+                                        placeholder="Search...">
+                                    <span class="input-group-text border-0 rounded-0"><i
+                                            class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="offcanvas-body p-0">
+
+                                <ul class="menu list-unstyled mb-0">
+
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            HOME
+                                            <span class="plus">+</span>
+                                        </a>
+
+                                        <ul class="submenu list-unstyled">
+                                            <li><a href="#">Home Style - 01</a></li>
+                                            <li><a href="#">Home Style - 02</a></li>
+                                            <li><a href="#">Home Style - 03</a></li>
+                                            <li><a href="#">Home Style - 04</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            SHOP
+                                            <span class="plus">+</span>
+                                        </a>
+
+                                        <ul class="submenu list-unstyled">
+                                            <li><a href="#">Shop</a></li>
+                                            <li><a href="#">Shop Grid</a></li>
+                                            <li><a href="./left_sidebar.html">Shop Left Sidebar</a></li>
+                                            <li><a href="#">Shop Right Sidebar</a></li>
+                                            <li><a href="#">Shop Details</a></li>
+                                            <li><a href="#">Cart</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">Checkout</a></li>
+                                            <li><a href="#">Order Tracking</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Sign In</a></li>
+                                            <li><a href="#">Register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            About Us
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            NEWS
+                                            <span class="plus">+</span>
+                                        </a>
+
+                                        <ul class="submenu list-unstyled">
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">News Grid</a></li>
+                                            <li><a href="#">News Left Sidebar</a></li>
+                                            <li><a href="#">News Right Sidebar</a></li>
+                                            <li><a href="#">News Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            PAGES
+                                            <span class="plus">+</span>
+                                        </a>
+
+                                        <ul class="submenu list-unstyled">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">Portfolio - 02</a></li>
+                                            <li><a href="#">Portfolio Details</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Google Map Locations</a></li>
+                                            <li><a href="#">404</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Coming Soon</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link">
+                                            CONTACT
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                                <div class=" px-3  py-4 border-top border-bottom mb-4 d-flex flex-column gap-4">
+
+                                    <div class="d-flex gap-4">
+                                        <a href="#" class="border border-2  d-flex justify-content-center"><i
+                                                class="icon-user m-auto p-3"></i> </a>
+                                        <a href="#" class="mt-3">My Account</a>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <a href="#" class="border border-2 d-flex justify-content-center"><i
+                                                class="icon-heart m-auto p-3"></i> </a>
+                                        <a href="#" class="mt-3"> Wishlist</a>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <a href="#" class="border border-2 d-flex justify-content-center"><i
+                                                class="icon-handbag m-auto p-3"></i> </a>
+                                        <a href="#" class="mt-3">
+                                            Shopping
+                                            Cart</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex justify-content-between col-8 p-3">
+                                    <a href="#"><i class="icon-social-facebook  p-2 bg-light"></i></a>
+                                    <a href="#"><i class="icon-social-twitter p-2 bg-light"></i></a>
+                                    <a href="#"><i class="icon-social-pinterest p-2 bg-light"></i></a>
+                                    <a href="#"><i class="icon-social-instagram p-2 bg-light"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+    </header>
+
+    <nav id="mainNav" class="navbar navbar-expand-lg bg-white">
+        <div class="container position-relative">
+
+            <a href="index.html" class="navbar-brand sticky-logo">
+                <img src="assest/image/logo.webp" alt="logo" class="logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown-custom">
+                        <a class="nav-link " href="#">Home</a>
+
+                        <ul class="dropdown-menu-custom">
+                            <li><a href="#">Home Style - 01</a></li>
+                            <li><a href="#">Home Style - 02</a></li>
+                            <li><a href="#">Home Style - 03</a></li>
+                            <li><a href="#">Home Style - 04</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mega-menu-parent">
+                        <a class="nav-link" href="#">Pages</a>
+
+                        <div class="mega-menu">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-3">
+                                        <div class="menu-box">
+                                            <h5>Inner Pages</h5>
+                                            <a href="#">About Us</a>
+                                            <a href="#">Portfolio</a>
+                                            <a href="#">Portfolio - 02</a>
+                                            <a href="#">Portfolio Details</a>
+                                            <a href="#">FAQ</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="menu-box">
+                                            <h5>Inner Pages</h5>
+                                            <a href="#">Google Map Locations</a>
+                                            <a href="#">404</a>
+                                            <a href="#">Contact</a>
+                                            <a href="#">Coming Soon</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="menu-box">
+                                            <h5>Shop Pages</h5>
+                                            <a href="#">Shop</a>
+                                            <a href="#">Shop Grid</a>
+                                            <a href="#">Shop Left Sidebar</a>
+                                            <a href="#">Shop Right Sidebar</a>
+                                            <a href="#">Shop Details</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="menu-box">
+                                            <h5>Blog Pages</h5>
+                                            <a href="#">News</a>
+                                            <a href="#">News Grid</a>
+                                            <a href="#">News Left Sidebar</a>
+                                            <a href="#">News Right Sidebar</a>
+                                            <a href="#">News Details</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-custom">
+                        <a class="nav-link " href="#">SHOP</a>
+
+                        <ul class="dropdown-menu-custom">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop Grid</a></li>
+                            <li> <a href="#">Shop Left Sidebar</a></li>
+                            <li> <a href="#">Shop Right Sidebar</a></li>
+                            <li><a href="#">Shop Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown-custom">
+                        <a class="nav-link " href="#">Portfolio</a>
+
+                        <ul class="dropdown-menu-custom">
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Portfolio-02</a></li>
+                            <li> <a href="#">Portfolio-Details</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-custom">
+                        <a class="nav-link " href="#">News</a>
+
+                        <ul class="dropdown-menu-custom">
+                            <li><a href="#">News Grid</a></li>
+                            <li><a href="#">News Left Sidebar</a></li>
+                            <li><a href="#">News Right Sidebar</a></li>
+                            <li><a href="#">News Details</a></li>
+
+
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <section class="heading-backround py-4 home">
+            <div class="container">
+                <h2 class=" text-dark text-center pt-4">Products</h2>
+                <p class="text-center text-secondary fw-500 small ">Home <span class="px-3 fw-normal"> <i
+                            class="fa-solid fa-angle-right"></i></span>
+                    Products
+                </p>
+
+            </div>
+        </section>
+        <section class="product-detail-slide">
+
+            <div class="container py-5">
+
+                <div class="row">
+                    <div class="col-3 col-md-2 col-lg-2">
+                        <div class="swiper product-thumb-slider ">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/1.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/2.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/3.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/4.webp" class="img-fluid thumb-img">
+                                </div>
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/8.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/7.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/6.webp" class="img-fluid thumb-img">
+                                </div>
+
+                                <div class="swiper-slide thumb-slide ">
+                                    <img src="./assest/image/5.webp" class="img-fluid thumb-img">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-4 col-lg-5">
+                        <div class="bg-light p-4 text-center ">
+                            <img src="./assest/image/1.webp" id="mainImage" class="img-fluid" alt="Product">
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0">
+
+                        <h2 class="fw-semibold mb-3 text-dark ">
+                            Pink Flower Tree Red
+                        </h2>
+
+                        <div class="d-flex align-items-lg-center gap-3 mb-4 flex-column flex-sm-row ">
+                            <h3 class=" text-primary mb-0">$49.00</h3>
+                            <del class="text-primary opacity-50 fs-5 fw-semibold">$65.00</del>
+                            <span class="text-warning small d-flex align-items-center gap-1">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i><i class="icon-social-instagram"></i>(95 Reviews)
+                            </span>
+                        </div>
+
+                        <p class="text-dark  mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus
+                            repudiandae incidunt quidem pariatur expedita, quo quis modi tempore non.
+                        </p>
+
+                        <h5 class="mb-3 text-dark ">Color</h5>
+                        <div class="d-flex gap-3 mb-4">
+                            <span class="rounded-circle bg-danger d-inline-block circle"></span>
+                            <span class="rounded-circle bg-success d-inline-block circle"></span>
+                            <span class="rounded-circle bg-primary d-inline-block circle"></span>
+                            <span class="rounded-circle border d-inline-block circle"></span>
+                            <span class="rounded-circle bg-warning d-inline-block circle"></span>
+                        </div>
+
+                        <h5 class="mb-3 text-dark">Size</h5>
+                        <div class="d-flex gap-4 mb-5">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 mb-5">
+
+                            <div class=" d-flex align-items-center p-0 bg-color-light">
+                                <button class="btn border-0 rounded-0 p-0 ms-3">-</button>
+                                <span class="px-2">02</span>
+                                <button class="btn border-0 rounded-0 p-0 ms-3">+</button>
+                            </div>
+
+                            <button class="btn btn-primary px-4  custom-btn rounded-0">
+                                ADD TO CART
+                            </button>
+
+                            <button class="btn  rounded-0 px-4 bg-color-light">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="d-flex align-items-center gap-4">
+                            <h5 class="mb-0 text-dark">Share:</h5>
+
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="icon-social-facebook"></i>
+                            </a>
+
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="icon-social-twitter"></i>
+
+                            </a>
+
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="icon-social-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="icon-social-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="mt-5">
+
+                            <p class="fw-semibold text-color fs-6 ">sku:<span
+                                    class="text-dark fs-6  fw-normal ms-5 px-4">1234</span>
+                            </p>
+
+                            <p class="fw-semibold text-color fs-6">Categories: <a href="#"
+                                    class="text-decoration-none  px-2 ms-1 hover fw-normal">Flower</a></p>
+                            <p class="fw-semibold text-color fs-6 ">Tags: <a href="#"
+                                    class="text-decoration-none  px-3 ms-5  fw-normal text-dark"><span
+                                        class="hover">love</span>,<span class="hover">Flower</span>,<span
+                                        class="hover">Heart</span></a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container mt-5 py-5">
+                <div class="d-flex justify-content-center gap-3 border-bottom border-top">
+                    <button id="discriptionbtn"
+                        class="border-0 dark-btn bg-primary rounded-0 fs-6 text-white py-2 px-2 px-lg-5">
+                        Description
+                    </button>
+                    <button id="reviewbtn"
+                        class="border-0  dark-btn rounded-0 fs-6 text-white py-2 px-2  px-lg-5">Reviews</button>
+                    <button id="shippingbtn"
+                        class="border-0 dark-btn rounded-0 fs-6 text-white  py-2 px-2  px-lg-5 ">Shipping</button>
+                </div>
+
+                <p id="discription" class=" py-4 text-justify  text-dark ">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing
+                    elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nost exercit ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur Excepte sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volu accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt explica Nemllo enim ipsam voluptatem quia voluptas sit aspernatur
+                    aut
+                    odit aut fugit,
+                </p>
+
+                <div id="reviews" class=" d-none mt-4 mb-5 ">
+                    <div class="row text-center row-gap-4">
+                        <h5 class="text-dark">Customer Reviews</h5>
+                        <span class="text-color small d-flex align-items-center justify-content-center  gap-1">
+                            <i class="fas fa-star hover-text"></i>
+                            <i class="fas fa-star hover-text"></i>
+                            <i class="fas fa-star hover-text"></i>
+                            <i class="fas fa-star-half-alt hover-text"></i>
+                            <i class="far fa-star hover-text"></i>
+                            </i><span class="hover-text">(95 Reviews)</span>
+                        </span>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-7">
+                            <div class="col-12 d-flex flex-wrap  gap-4 mt-5 ">
+                                <div class="col-12 col-lg-2 col-md-2">
+                                    <img src="./assest/image/man1.webp" alt=""
+                                        class="img-fluid reviews-img rounded-circle">
+                                </div>
+                                <div class="bg-color-light p-4 col-12 col-md-10 col-lg-9 reviews-box">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-dark mt-2">Adam Smit</h5>
+                                        <div
+                                            class="rounded-pill bg-primary text-white px-3 py-2 fw-semibold d-none d-md-block">
+                                            September 3, 2020
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-color small d-flex align-items-center justify-content-start  gap-1">
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star-half-alt hover-text"></i>
+                                        <i class="far fa-star hover-text"></i>
+                                    </span>
+                                    <p class="mt-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Doloribus, omnis
+                                        fugit corporis
+                                        iste magnam ratione.</p>
+                                    <div
+                                        class="rounded-pill bg-primary text-white px-2 text-center py-2 fw-semibold d-block d-md-none col-7">
+                                        September 3, 2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-wrap  gap-4 mt-5">
+                                <div class="col-12 col-lg-2 col-md-2">
+                                    <img src="./assest/image/man3.webp" alt=""
+                                        class="img-fluid reviews-img rounded-circle">
+                                </div>
+                                <div class="bg-color-light p-4 col-12 col-md-10 col-lg-9 reviews-box">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-dark mt-2">Adam Smit</h5>
+                                        <div
+                                            class="rounded-pill bg-primary text-white px-3 py-2  fw-semibold d-none d-md-block">
+                                            September 3, 2020
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-color small d-flex align-items-center justify-content-start  gap-1">
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star-half-alt hover-text"></i>
+                                        <i class="far fa-star hover-text"></i>
+                                    </span>
+                                    <p class="mt-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Doloribus, omnis
+                                        fugit corporis
+                                        iste magnam ratione.</p>
+                                    <div
+                                        class="rounded-pill bg-primary text-white px-2 text-center py-2 fw-semibold d-block d-md-none col-7">
+                                        September 3, 2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 d-flex flex-wrap  gap-4 mt-5">
+                                <div class="col-12 col-lg-2 col-md-2">
+                                    <img src="./assest/image/man2.webp" alt=""
+                                        class="img-fluid reviews-img rounded-circle">
+                                </div>
+                                <div class="bg-color-light p-4 col-12 col-md-10 col-lg-9 reviews-box">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-dark mt-2">Adam Smit</h5>
+                                        <div
+                                            class="rounded-pill bg-primary text-white px-3 py-2   fw-semibold d-none d-md-block">
+                                            September 3, 2020
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="text-color small d-flex align-items-center justify-content-start  gap-1">
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star hover-text"></i>
+                                        <i class="fas fa-star-half-alt hover-text"></i>
+                                        <i class="far fa-star hover-text"></i>
+                                    </span>
+                                    <p class="mt-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Doloribus, omnis
+                                        fugit corporis
+                                        iste magnam ratione.</p>
+                                    <div
+                                        class="rounded-pill bg-primary text-white px-2 text-center py-2 fw-semibold d-block d-md-none col-7">
+                                        September 3, 2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 mt-5">
+                            <h5 class="border-bottom py-2 text-dark mb-5">Add a Review</h5>
+                            <span class="text-color small d-flex align-items-center  justify-content-start  gap-1">
+                                <h6 class="me-4 d-flex mt-2 text-dark">Your Ratings:</h6>
+                                <i class="fas fa-star hover-text"></i>
+                                <i class="fas fa-star hover-text"></i>
+                                <i class="fas fa-star hover-text"></i>
+                                <i class="fas fa-star-half-alt hover-text"></i>
+                                <i class="far fa-star hover-text"></i>
+                            </span>
+
+                            <form id="myForm">
+
+                                <div class="position-relative mb-5">
+                                    <textarea id="comment" class="form-control form-box rounded-0"
+                                        placeholder="Type your comments...."></textarea>
+                                    <small class="error" id="commentError"></small>
+                                    <i class="fa-solid fa-pen icon"></i>
+                                </div>
+
+                                <div class="position-relative mb-3">
+                                    <input id="name" type="text" class="form-control form-box rounded-0"
+                                        placeholder="Type your name....">
+                                    <small class="error" id="nameError"></small>
+                                    <i class="fa-solid fa-user icon"></i>
+                                </div>
+
+                                <div class="position-relative mb-3">
+                                    <input id="email" type="email" class="form-control form-box rounded-0"
+                                        placeholder="Type your email....">
+                                    <small class="error" id="emailError"></small>
+                                    <i class="fa-solid fa-envelope icon"></i>
+                                </div>
+
+                                <div class="position-relative mb-3">
+                                    <input id="website" type="text" class="form-control form-box rounded-0"
+                                        placeholder="Type your website....">
+                                    <small class="error" id="websiteError"></small>
+                                    <i class="fa-solid fa-globe icon"></i>
+                                </div>
+
+                                <div class="form-check d-flex gap-1 p-0">
+                                    <input class="mb-4" id="saveInfo" type="checkbox">
+                                    <label class="form-check-label mt-md-0 mt-1">
+                                        Save my name, email, and website in this browser for the next time I comment.
+                                    </label>
+
+                                </div>
+                                <small class="error mb-4 " id="checkboxError"></small>
+
+                                <button type="submit" id="submitBtn" class="submit-btn">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 d-none" id="shipping">
+                    <div class="border-bottom pb-2 mb-4">
+                        <h5 class=" text-dark">Shipping policy for our store</h5>
+                    </div>
+
+                    <p class="text-dark">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptates rerum neque ad libero
+                        numquam officiis ipsum,
+                        consectetur ducimus dicta in earum repellat sunt ab odit laboriosam cupiditate ipsam,
+                        doloremque.
+                    </p>
+
+                    <ul class="mt-4 ps-3 text-color">
+                        <li class="mb-4">1-2 business days (Typically by end of day)</li>
+                        <li class="mb-4">30 days money back guaranty</li>
+                        <li class="mb-4">24/7 live support</li>
+                        <li class="mb-4">odio dignissim qui blandit praesent</li>
+                        <li class="mb-4">luptatum zzril delenit augue duis dolore</li>
+                        <li class="mb-4">te feugait nulla facilisi.</li>
+                    </ul>
+
+                    <p class="text-dark mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quia vel eligendi ipsam. Ea,
+                        quasi
+                        quam ducimus recusandae unde ipsa nam rem a minus tenetur quae sint voluptatem voluptate
+                        inventore.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="product-detail">
+            <div class="container mt-5">
+                <div class="row justify-content-center text-center my-5">
+
+                    <h1 class="fw-bold  display-5 text-dark">
+                        related products
+                    </h1>
+
+                    <div class="border-top border-3 border-danger heading mt-2"></div>
+
+                </div>
+                <div class="swiper products-swiper product-slider  px-4">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- PRODUCT 1 -->
+                        <div class="swiper-slide gap-0 gap-lg-5">
+                            <div class="card text-center position-relative border-0 flower-card rounded-0">
+
+                                <div
+                                    class="badge bg-accent py-2 px-3  mt-4 fw-bold rounded-0 rounded-end position-absolute">
+                                    10%
+                                </div>
+
+                                <img src="./assest/image/7.webp" class="img-fluid mx-auto rounded-0" alt="Flower">
+
+                                <div class="hover-cart d-flex align-items-center p-0">
+                                    <div class="px-3 py-2 wishlist-btn">
+                                        <a href="#"><i class="fa-regular fa-heart text-white"></i></a>
+                                    </div>
+
+                                    <div
+                                        class="px-3 py-2 flex-grow-1 border-start border-end text-center add-to-cart-btn">
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <span class="add-cart-text">ADD TO CART</span>
+                                            <i class="icon-handbag cart-icon"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="px-3 py-2 Search-btn">
+                                        <a href="#" class="text-decoration-none"><i class="icon-eye text-white"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="text-color small-size d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </span>
+                                <p class="border-bottom py-2 small text-dark">PINK FLOWER TREE</p>
+                                <p class="fw-semibold text-color ">$18.00 <span
+                                        class="text-lighter small text-decoration-line-through fw-normal"> $21.00</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT 2 -->
+                        <div class="swiper-slide">
+                            <div class="card text-center position-relative border-0 flower-card rounded-0">
+
+                                <div
+                                    class="badge bg-primary py-2 px-3  mt-4 fw-bold rounded-0 rounded-end position-absolute">
+                                    HOT
+                                </div>
+
+                                <img src="./assest/image/4.webp" class="img-fluid mx-auto rounded-0" alt="Flower">
+
+                                <div class="hover-cart d-flex align-items-center p-0">
+                                    <div class="px-3 py-2 wishlist-btn">
+                                        <a href="#"><i class="fa-regular fa-heart text-white"></i></a>
+                                    </div>
+
+                                    <div
+                                        class="px-3 py-2 flex-grow-1 border-start border-end text-center add-to-cart-btn">
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <span class="add-cart-text">ADD TO CART</span>
+                                            <i class="icon-handbag cart-icon"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="px-3 py-2 Search-btn">
+                                        <a href="#" class="text-decoration-none"><i class="icon-eye text-white"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="text-color small-size d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </span>
+                                <p class="border-bottom py-2 small text-dark">PREMIUM JOYFUL</p>
+                                <p class="fw-semibold text-color ">$18.00
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCT 3 -->
+                        <div class="swiper-slide">
+                            <div class="card text-center position-relative border-0 flower-card rounded-0">
+
+                                <div
+                                    class="badge bg-accent py-2 px-3  mt-4 fw-bold rounded-0 rounded-end position-absolute">
+                                    12%
+                                </div>
+
+                                <img src="./assest/image/6.webp" class="img-fluid mx-auto rounded-0" alt="Flower">
+
+                                <div class="hover-cart d-flex align-items-center p-0">
+                                    <div class="px-3 py-2 wishlist-btn">
+                                        <a href="#"><i class="fa-regular fa-heart text-white"></i></a>
+                                    </div>
+
+                                    <div
+                                        class="px-3 py-2 flex-grow-1 border-start border-end text-center add-to-cart-btn">
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <span class="add-cart-text">ADD TO CART</span>
+                                            <i class="icon-handbag cart-icon"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="px-3 py-2 Search-btn">
+                                        <a href="#" class="text-decoration-none"><i class="icon-eye text-white"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="text-color small d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </span>
+                                <p class="border-bottom py-2 small text-dark">THE WHITE ROSE</p>
+                                <p class="fw-semibold text-color ">$16.00 <span
+                                        class="text-lighter small text-decoration-line-through fw-normal"> $19.00</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- PRODUCT 4 -->
+                        <div class="swiper-slide">
+                            <div class="card text-center position-relative border-0 flower-card rounded-0">
+
+                                <div
+                                    class="badge bg-primary py-2 px-3  mt-4 fw-bold rounded-0 rounded-end position-absolute">
+                                    HOT
+                                </div>
+
+                                <img src="./assest/image/4.webp" class="img-fluid mx-auto rounded-0" alt="Flower">
+
+                                <div class="hover-cart d-flex align-items-center p-0">
+                                    <div class="px-3 py-2 wishlist-btn">
+                                        <a href="#"><i class="fa-regular fa-heart text-white"></i></a>
+                                    </div>
+
+                                    <div
+                                        class="px-3 py-2 flex-grow-1 border-start border-end text-center add-to-cart-btn">
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <span class="add-cart-text">ADD TO CART</span>
+                                            <i class="icon-handbag cart-icon"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="px-3 py-2 Search-btn">
+                                        <a href="#" class="text-decoration-none"><i class="icon-eye text-white"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="text-color small-size d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </span>
+                                <p class="border-bottom py-2 small text-dark">RED ROSE BOUQUET</p>
+                                <p class="fw-semibold text-color ">$20.00 <span
+                                        class="text-lighter small text-decoration-line-through fw-normal"> $21.00</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- PRODUCT 5 -->
+                        <div class="swiper-slide">
+                            <div class="card text-center position-relative border-0 flower-card rounded-0">
+
+                                <div
+                                    class="badge bg-primary py-2 px-3  mt-4 fw-bold rounded-0 rounded-end position-absolute">
+                                    HOT
+                                </div>
+
+                                <img src="./assest/image/5.webp" class="img-fluid mx-auto rounded-0" alt="Flower">
+
+                                <div class="hover-cart d-flex align-items-center p-0">
+                                    <div class="px-3 py-2 wishlist-btn">
+                                        <a href="#"><i class="fa-regular fa-heart text-white"></i></a>
+                                    </div>
+
+                                    <div
+                                        class="px-3 py-2 flex-grow-1 border-start border-end text-center add-to-cart-btn">
+                                        <a href="#" class="text-decoration-none text-white">
+                                            <span class="add-cart-text">ADD TO CART</span>
+                                            <i class="icon-handbag cart-icon"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="px-3 py-2 Search-btn">
+                                        <a href="#" class="text-decoration-none"><i class="icon-eye text-white"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="text-color small-size d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </span>
+                                <p class="border-bottom py-2 small text-dark">HEART'S DESIRE</p>
+                                <p class="fw-semibold text-color ">$15.00 </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next  swiper-circle "></div>
+                    <div class="swiper-button-prev  swiper-circle "></div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- CART MODAL -->
+        <div class="modal fade " id="cartModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4 text-center rounded-0">
+
+                    <button type="button"
+                        class=" border-0 bg-primary  rounded-0  text-white px-3 py-2 fw-semibold ms-auto"
+                        data-bs-dismiss="modal">x</button>
+                    <div class="row d-flex mb-3">
+                        <div class="col-3">
+                            <img src="./assest/image/1.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 text-start">
+                            <h6 class="text-dark mb-2">Heart's Desire</h6>
+                            <p class="text-dark"><span
+                                    class="bg-success text-white small-size  px-1 rounded-pill">✔</span>
+                                Successfully added to your Cart</p>
+                            <div class="d-flex gap-1 my-3">
+                                <button class="btn custom-btn btn-primary rounded-0 p-0 px-3 py-1 ">View
+                                    Cart</button>
+                                <button class="btn  custom-btn2 rounded-0 p-0 px-3 py-1 ">Checkout</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="small ">We want to give you 10% discount for your first order,
+                            Use (fiama10) discount code at checkout</p>
+                        <img src="./assest/image/payment.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wishlist MODAL -->
+        <div class="modal fade " id="WishlistModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4 text-center rounded-0">
+
+                    <button type="button"
+                        class=" border-0 bg-primary  rounded-0  text-white px-3 py-2 fw-semibold ms-auto"
+                        data-bs-dismiss="modal">x</button>
+                    <div class="row d-flex mb-3">
+                        <div class="col-3">
+                            <img src="./assest/image/1.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 text-start">
+                            <h6 class="text-dark mb-2">Heart's Desire</h6>
+                            <p class="text-dark"><span
+                                    class="bg-success text-white small-size  px-1 rounded-pill">✔</span>
+                                Successfully added to your wishlist</p>
+                            <div class="d-flex gap-1 my-3">
+                                <button class="btn custom-btn btn-primary rounded-0 p-0 px-3 py-1 ">View
+                                    Wishlist</button>
+                                <button class="btn  custom-btn2 rounded-0 p-0 px-3 py-1 ">Checkout</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Search MODAL -->
+        <div class="modal fade" id="SearchModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content rounded-0 border-0 p-4">
+
+                    <!-- Close Button -->
+                    <button type="button" class="btn bg-primary text-white rounded-0 position-absolute top-0 end-0 m-4"
+                        data-bs-dismiss="modal">
+                        ✕
+                    </button>
+
+                    <div class="row">
+
+                        <!-- Product Image -->
+                        <div class="col-lg-6">
+                            <div class="bg-light p-4 text-center">
+                                <img src="./assest/image/1.webp" class="img-fluid" alt="Product">
+                            </div>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+
+                            <h2 class="fw-semibold mb-3 text-dark ">
+                                Pink Flower Tree Red
+                            </h2>
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <h3 class="text-primary mb-0">$49.00</h3>
+                                <del class="text-primary opacity-50 fs-5 fw-semibold">$65.00</del>
+                                <span class="text-warning small d-flex align-items-center gap-1">
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i><i class="icon-social-instagram"></i>(95 Reviews)
+                                </span>
+                            </div>
+
+                            <p class="text-dark col-11 mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus
+                                repudiandae incidunt quidem pariatur expedita, quo quis modi tempore non.
+                            </p>
+
+                            <h5 class="mb-3 text-dark ">Color</h5>
+                            <div class="d-flex gap-3 mb-4">
+                                <span class="rounded-circle bg-danger d-inline-block circle"></span>
+                                <span class="rounded-circle bg-success d-inline-block circle"></span>
+                                <span class="rounded-circle bg-primary d-inline-block circle"></span>
+                                <span class="rounded-circle border d-inline-block circle"></span>
+                                <span class="rounded-circle bg-warning d-inline-block circle"></span>
+                            </div>
+
+                            <!-- Sizes -->
+                            <h5 class="mb-3 text-dark">Size</h5>
+                            <div class="d-flex gap-4 mb-5">
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                            </div>
+
+
+                            <!-- Quantity & Buttons -->
+                            <div class="d-flex flex-wrap gap-3 mb-5">
+
+                                <div class=" d-flex align-items-center p-0 bg-color-light">
+                                    <button class="btn border-0 rounded-0 p-0 ms-3">-</button>
+                                    <span class="px-2">02</span>
+                                    <button class="btn border-0 rounded-0 p-0 ms-3">+</button>
+                                </div>
+
+                                <button class="btn btn-primary px-4  custom-btn rounded-0">
+                                    ADD TO CART
+                                </button>
+
+                                <button class="btn  rounded-0 px-4 bg-color-light">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                            </div>
+
+                            <!-- Social -->
+                            <div class="d-flex align-items-center gap-4">
+                                <h5 class="mb-0 text-dark">Share:</h5>
+
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="icon-social-facebook"></i>
+                                </a>
+
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="icon-social-twitter"></i>
+
+                                </a>
+
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="icon-social-pinterest"></i>
+                                </a>
+
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="icon-social-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="brand-logo-area brand-logo-color mt-5 py-5">
+
+            <div class="container-fluid ">
+                <div class="row text-center align-items-center g-3">
+
+                    <div class="col-6 col-md-4 col-lg banner-img">
+                        <img src="./assest/image/barandlogo1.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg">
+                        <img src="./assest/image/brandlogo2.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg">
+                        <img src="./assest/image/brandlogo3.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg">
+                        <img src="./assest/image/brandlogo4.webp" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg">
+                        <img src="./assest/image/brandlogo3.webp" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer-area">
+        <div class="footer-top-area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget clearfix">
+                            <h4 class="footer-title">My Account</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="pages/account.html">My account</a></li>
+                                    <li><a href="pages/checkout.html">Checkout</a></li>
+                                    <li><a href="pages/contact.html">Contact us</a></li>
+                                    <li><a href="pages/cart.html">Shopping Cart</a></li>
+                                    <li><a href="pages/wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget clearfix">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Store Location</a></li>
+                                    <li><a href="pages/contact.html">Orders Tracking</a></li>
+                                    <li><a href="pages/shop-details.html">Size Guide</a></li>
+                                    <li><a href="pages/account.html">My account</a></li>
+                                    <li><a href="pages/faq.html">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget clearfix">
+                            <h4 class="footer-title">Information</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="pages/contact.html">Privacy Page</a></li>
+                                    <li><a href="pages/about.html">About Us</a></li>
+                                    <li><a href="pages/contact.html">Careers</a></li>
+                                    <li><a href="pages/faq.html">Delivery Information</a></li>
+                                    <li><a href="pages/contact.html">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget clearfix">
+                            <h4 class="footer-title">Customer Service</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="pages/shop-details.html">Shipping Policy</a></li>
+                                    <li><a href="pages/contact.html">Help &amp; Contact Us</a></li>
+                                    <li><a href="pages/account.html">Returns &amp; Refunds</a></li>
+                                    <li><a href="pages/shop.html">Online Stores</a></li>
+                                    <li><a href="pages/contact.html">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-about-widget">
+                            <h4 class="footer-title">About Our Shop</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incididunt ut
+                                labore et dolore</p>
+                            <div class="footer-address">
+                                <ul>
+                                    <li>
+                                        <div class="footer-address-icon"><i class="icon-location-pin"></i></div>
+                                        <div class="footer-address-info">
+                                            <p>Brooklyn, New York, United States</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-address-icon"><i class="icon-phone"></i></div>
+                                        <div class="footer-address-info"><a href="#">+0123-456789</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-address-icon"><i class="icon-envelope"></i></div>
+                                        <div class="footer-address-info"><a href="#">example@example.com</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-payment-img mt-3">
+                                <img src="assest/image/payment-6.webp" alt="Payment Methods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area ">
+            <div class="container border-top-2">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="footer-copyright-left">
+                            <div class="copyright-design clearfix">
+                                <p>© <span id="currentYear">2023</span> - Just For You</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="footer-copyright-right text-md-end text-center">
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="#"><i class="icon-social-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-social-twitter"></i></a></li>
+                                    <li><a href="#"><i class="icon-social-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="icon-social-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="scrollTopBtn"
+        class="position-fixed d-flex align-items-center justify-content-center text-decoration-none ">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
